@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "conexion-ciudadana"
+version = "0.1.0"
+description = "Social network framework and server functionality"
+authors = ["AF <angfa@protonmail.com>"]
+license = "The Unlicence"
+readme = "README.md"
+packages = [{include = "conexion_ciudadana"}]
+
+[tool.poetry.dependencies]
+python = "3.11"
+graphene = "^3.2.2"
+graphene-gis = "^0.0.8"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
